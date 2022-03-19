@@ -18,37 +18,53 @@
             <img id="texture" src="./assets/images/texture.png">
             <img id="texture1" src="./assets/images/texture2.png">
             <img id="texture3" src="./assets/images/texture3.png">
-            <img id="texture2" src="./assets/images/background.png">
+            <img id="texture4" src="./assets/images/texture4.png">
+            <img id="texture5" src="./assets/images/texture5.png">
+            <img id="texture2" src="./assets/images/backgroundalt.png">
+            <img id="congrats" src="./assets/images/congrats.png">
+            <img id="fin" src="./assets/images/fin.png">
+            <img id="fin2" src="./assets/images/fin2.png">
             <img id="pano" src="./assets/images/pano.png">
         </a-assets>
 
         <!-- INSEREZ VOTRE ENVIRONNEMENT, CI-DESSOUS ... -->
         <a-sky src="#texture2"></a-sky>
 
-                <a-box position="0 -50 0" width="1" height="100" depth="1" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="0 -0.5 0" width="1" height="1" depth="1" multisrc="src0:#texture1; src1:#texture1; src2:#texture; src3:#texture1; src4:#texture1; src5:#texture1">
                 </a-box>
-                <a-box position="1 -50 -1" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="1.5 0 0" width="0.5" height="0.1" depth="0.5" color="#ffe600">
                 </a-box>
-                <a-box position="0 -50 -2" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="2.5 0 -0.5" width="0.5" height="0.1" depth="0.5" color="#8c00ff">
                 </a-box>
-                <a-box position="-1.5 -50 -1.5" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="3.5 0 -1" width="0.5" height="0.1" depth="0.5" color="#00aeff">
                 </a-box>
-                <a-box position="-2 -50 -0.5" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="3.5 0 -2" width="0.5" height="0.1" depth="0.5" color="#ff5900">
                 </a-box>
-                <a-box position="-2 -50 1" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="2.5 0 -2.5" width="0.5" height="0.1" depth="0.5" color="#00ff0d">
                 </a-box>
-                <a-box position="-0.25 -50 1.5" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="1.25 0 -2.5" width="0.5" height="0.1" depth="0.5" color="#ff0095">
                 </a-box>
-                <a-box position="1.5 -50 1.5" width="0.5" height="100" depth="0.5" multisrc="src0:#texture3; src1:#texture3; src2:#texture; src3:#texture3; src4:#texture3; src5:#texture3" repeat="1 50">
+                <a-box position="1 0 -1.5" width="0.5" height="0.1" depth="0.5" multisrc="src0:#texture5; src1:#texture5; src2:#texture4; src3:#texture5; src4:#texture5; src5:#texture5">
+                </a-box>
+                <a-box position="0 0 -3" width="1" height="0.1" depth="1" multisrc="src0:#fin2; src1:fin2; src2:#congrats; src3:#fin2; src4:#fin2; src5:#fin2" repeat="1 50">
                 </a-box>
 
-                <a-box position="-0.75 -47 -0" width="0.01" height="100" depth="1.5" src="#texture1" repeat="1 50">
+                <a-box position="-0.75 1 -0" width="0.01" height="3" depth="1.5" src="#texture1">
                 </a-box>
-                <a-box position="-0.25 -47 -0.75" width="1.125" height="100" depth="0.01" src="#texture1" repeat="1 50">
+                <a-box position="-0.25 1 -0.75" width="1.125" height="3" depth="0.01" src="#texture1">
                 </a-box>
-                <a-box position="0 -47 0.75" width="1.5" height="100" depth="0.01" src="#texture1" repeat="1 50">
+                <a-box position="0 1 0.75" width="1.5" height="3" depth="0.01" src="#texture1">
                 </a-box>
                 <a-box position="0 1.6 -0.74" width="0.5" height="0.5" depth="0.01" src="#pano"></a-box>
+
+                <a-box position="-0.5 50 -3" width="0.01" height="100" depth="1" src="#fin">
+                </a-box>
+                <a-box position="0.5 50 -3" width="0.01" height="100" depth="1" src="#fin">
+                </a-box>
+                <a-box position="0 50 -3.5" width="0.01" height="100" depth="1"  rotation="0 90 0" src="#fin">
+                </a-box>
+                <a-box position="0 50 -2.5" width="0.01" height="100" depth="1" rotation="0 90 0" src="#fin">
+                </a-box>
 
         <!--... JUSQUE CI-DESSUS -->
 

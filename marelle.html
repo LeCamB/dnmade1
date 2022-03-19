@@ -6,22 +6,24 @@
 </head>
 
 <body>
-        <a-assets>
-            <img id="texture" src="./assets/images/texture.png">
-            <img id="texture1" src="./assets/images/texture2.png">
-            <img id="texture3" src="./assets/images/texture3.png">
-            <img id="texture4" src="./assets/images/texture4.png">
-            <img id="texture5" src="./assets/images/texture5.png">
-            <img id="texture2" src="./assets/images/backgroundalt.png">
-            <img id="congrats" src="./assets/images/congrats.png">
-            <img id="fin" src="./assets/images/fin.png">
-            <img id="fin2" src="./assets/images/fin2.png">
-            <img id="pano" src="./assets/images/pano.png">
-        </a-assets>
+        
 
         <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" id="updateMe"></a-entity>
 
         <a-scene>
+                <a-assets>
+                        <img id="texture" src="./assets/images/texture.png">
+                        <img id="texture1" src="./assets/images/texture2.png">
+                        <img id="texture3" src="./assets/images/texture3.png">
+                        <img id="texture4" src="./assets/images/texture4.png">
+                        <img id="texture5" src="./assets/images/texture5.png">
+                        <img id="texture2" src="./assets/images/backgroundalt.png">
+                        <img id="congrats" src="./assets/images/congrats.png">
+                        <img id="fin" src="./assets/images/fin.png">
+                        <img id="fin2" src="./assets/images/fin2.png">
+                        <img id="pano" src="./assets/images/pano.png">
+                    </a-assets>
+                    
                 <a-sky src="#texture2"></a-sky>
 
                 <a-box position="0 -0.5 0" width="1" height="1" depth="1" multisrc="src0:#texture1; src1:#texture1; src2:#texture; src3:#texture1; src4:#texture1; src5:#texture1">

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #02252e">
+
+        <a-assets>
+            <a-asset-item id="carlos-obj" src="./assets/agathe.obj"></a-asset-item>
+            <a-asset-item id="carlos-mtl" src="./assets/agathe.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #carlos-obj; mtl: #carlos-mtl" position="0 0 -4" scale="20 20 20"></a-entity>
+
+        <a-light type="point" position="0 4 -3" rotation="-90 0 0" color="green" intensity="0.7"
+            angle="20" penumbra="0.4" target="#directionaltarget">
+        </a-light>
+        <a-entity id="directionaltarget" position="4 0 -1"></a-entity>
+        <a-light type="spot" position="8.3 8 0.4" rotation="-90 0 0" color="#7cff00" intensity="1"
+            angle="20" penumbra="1" animation="property: position; to: 8.3 0 0.4; dir: alternate; dur: 4300; easing: easeInOutQuad; loop: true" target="#directionaltarget1">
+        </a-light>
+        <a-entity id="directionaltarget1" position="3.1 1.2 -5"></a-entity>
+        
+        <a-light type="spot" position="-3 0 3.5" rotation="-90 0 0" color="#7cff00" intensity="1"
+            angle="20" penumbra="1" animation="property: position; to: -4 7 3.5; dir: alternate; dur: 4000; easing: easeInOutQuad; loop: true" target="#directionaltarget2">
+        </a-light>
+        <a-entity id="directionaltarget2" position="-1 2.2 -2.5" animation="property: position; to: O 1.2 -2.5; dir: alternate; dur: 4300; easing: easeInOutQuad; loop: true"></a-entity>
+
+        <a-light type="spot" position="-3 -3 -12.4" rotation="-90 0 0" color="#7cff00" intensity="1"
+            angle="20" penumbra="1" animation="property: position; to: 0 8 -12.4; dir: alternate; dur: 5000; easing: easeInOutQuad; loop: true" target="#directionaltarget3">
+        </a-light>
+        <a-entity id="directionaltarget3" position="-2.6 3.6 -7.1" animation="property: position; to: 0 3.6 -7.1; dir: alternate; dur: 5000; easing: easeInOutQuad; loop: true"></a-entity>
+
+    </a-scene>
+</body>
+
+</html>

@@ -7,4 +7,4 @@
 
 [Marelle pieds mains](./marelle_pieds-mains.html)  
 
-[Test lumière](./test_light_spot.html)
+[Test lumière](./maquette/exemple_obj.html)
